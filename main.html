@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and Collect - Library Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <div class="navbar-logo-section">
+                    <img class="navbar-logo" src="http://localhost:3845/assets/1ce7cf78151afb05a1e53dbcf9584dc301ae1be3.svg" alt="Logo">
+                    <div class="navbar-title">Library Search</div>
+                </div>
+                <div class="navbar-search">
+                    <input type="text" placeholder="Search for books, articles and more">
+                    <img src="http://localhost:3845/assets/4445274806156fdb1ce47bc40539efd0c34952e8.svg" alt="Search">
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="navbar-link">
+                    <span>Current Reservation</span>
+                    <img src="http://localhost:3845/assets/0fce748c91ac619d4b97b4ce3fef20e3b7b43b41.svg" alt="Books">
+                </a>
+                <a href="#" class="navbar-link">
+                    <span>Lists</span>
+                    <img src="http://localhost:3845/assets/9f6aec299689927c5e4eedeb0303ff4194aeebcb.svg" alt="Hamburger">
+                </a>
+                <a href="#" class="navbar-link">
+                    <span>My Account</span>
+                    <img src="http://localhost:3845/assets/bafca265d90a5f2cfb7dae48e32f8ea25b0be3b3.svg" alt="Dropdown" style="transform: rotate(90deg);">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img class="hero-bg" src="http://localhost:3845/assets/40802ebc1f20e052ff6109b083b197ba53682b7f.png" alt="Library Background">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Click and Collect</h1>
+                <p class="hero-subtitle">Welcome to the Manchester Metropolitan University Click and Collect Library service.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Banner -->
+    <div class="welcome-banner">
+        <h2 class="welcome-title">Welcome, Frankie!</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <!-- Info Cards -->
+        <div class="info-cards">
+            <div class="info-card">
+                <h3 class="info-card-title">Your Updates</h3>
+                <div class="update-item">
+                    <img class="update-icon" src="http://localhost:3845/assets/08efd295a1c85a88261ea361b65af1fe6b053407.svg" alt="Bookshelf">
+                    <p class="update-text">2 Hours Ago - Your Reservation is now ready to be collected from the Library</p>
+                </div>
+                <div class="update-item">
+                    <img class="update-icon" src="http://localhost:3845/assets/103804bd63ad8d50ef84d92594aae225ad922daf.svg" alt="Process">
+                    <p class="update-text">2 Days Ago Your Reservation Is currently being processed</p>
+                </div>
+                <div class="update-item">
+                    <img class="update-icon" src="http://localhost:3845/assets/f4753ea871a99af0d0344ff944e7472f12ba0eb1.svg" alt="Tick">
+                    <p class="update-text">4 Days Ago - Your Return has been accepted</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <h3 class="info-card-title">What's New</h3>
+                <p class="info-card-text">Lorem ipsum dolor sit amet consectetur. Sed nulla ipsum a vel leo eget odio. Bibendum dui nisi adipiscing sed dictum enim leo sed. Sagittis iaculis sed non tempus hendrerit sollicitudin. Risus at ut cras pharetra non morbi et turpis.</p>
+                <p class="info-card-text">Turpis justo lorem nulla volutpat vitae. Amet ut mi gravida facilisi. Mauris nisi felis nulla id sed sit.</p>
+            </div>
+        </div>
+
+        <!-- Reading Lists -->
+        <div class="reading-lists">
+            <!-- Design for Others -->
+            <div class="reading-list-section">
+                <h2 class="reading-list-title">Apart of "Design for Others"</h2>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Experience Design -->
+            <div class="reading-list-section">
+                <h2 class="reading-list-title">Apart of "User Experience Design"</h2>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/35f1048393ebea9fb895a463498e229a0eaa9cb5.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Co-Lab 3 -->
+            <div class="reading-list-section">
+                <h2 class="reading-list-title">Apart of "Co-Lab 3"</h2>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-card-top">
+                            <img class="book-cover" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                            <div class="book-info">
+                                <div class="book-title-section">
+                                    <h3 class="book-title">The Design of Everyday Things</h3>
+                                    <p class="book-author">By Donald A. Norman</p>
+                                </div>
+                                <p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget. Turpis id cum consequat ridiculus magna.</p>
+                            </div>
+                        </div>
+                        <div class="book-card-bottom">
+                            <div class="book-information">
+                                <div class="availability">
+                                    <img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+                                    <span class="availability-text">Available</span>
+                                </div>
+                                <span class="book-edition">2017 - First Edition</span>
+                            </div>
+                            <div class="book-buttons">
+                                <button class="btn">
+                                    <span>Add to List</span>
+                                    <img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+                                </button>
+                                <button class="btn">
+                                    <span>Share</span>
+                                    <img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Placeholder Cards -->
+        <div class="placeholder-cards">
+            <div class="placeholder-card">
+                <h3 class="placeholder-title">Placeholder 1</h3>
+                <p class="placeholder-text">Lorem ipsum dolor sit amet consectetur. Sed nulla ipsum a vel leo eget odio. Bibendum dui nisi adipiscing xa dictum enim leo sed. Sagittis iaculis sed non tempus hendrerit sollicitudin. Risus at ut cras pharetra non morbi et turpis.</p>
+                <p class="placeholder-text">Turpis justo lorem nulla volutpat vitae. Amet ut mi gravida facilisi. Mauris nisi felis nulla id sed sit.</p>
+            </div>
+            <div class="placeholder-card">
+                <h3 class="placeholder-title">Placeholder 2</h3>
+                <p class="placeholder-text">Lorem ipsum dolor sit amet consectetur. Sed nulla ipsum a vel leo eget odio. Bibendum dui nisi adipiscing sed dictum enim leo sed. Sagittis iaculis sed non tempus hendrerit sollicitudin. Risus at ut cras pharetra non morbi et turpis.</p>
+                <p class="placeholder-text">Turpis justo lorem nulla volutpat vitae. Amet ut mi gravida facilisi. Mauris nisi felis nulla id sed sit.</p>
+            </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <div class="recent-section">
+            <div class="recent-header">
+                <h2 class="recent-title">Recently Viewed</h2>
+                <a href="#" class="view-all-link">View All</a>
+            </div>
+            <div class="recent-cards">
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="recent-section">
+            <div class="recent-header">
+                <h2 class="recent-title">Recommendations based on Your Views</h2>
+                <a href="#" class="view-all-link">View All</a>
+            </div>
+            <div class="recent-cards">
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+                <div class="recent-card">
+                    <img src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book Cover">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-address">
+                    <p>Manchester Metropolitan University Library</p>
+                    <p>John Dalton Building</p>
+                    <p>Chester Street</p>
+                    <p>(Entrance on Oxford Road)</p>
+                    <p>Manchester</p>
+                    <p>M1 5GD</p>
+                    <p>United Kingdom</p>
+                </div>
+                <h3 class="footer-section-title">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Using the Library</a>
+                    <a href="#" class="footer-link">Search tools</a>
+                    <a href="#" class="footer-link">Referencing and study support</a>
+                    <a href="#" class="footer-link">Staff and researchers</a>
+                    <a href="#" class="footer-link">Sign in</a>
+                </div>
+                <div class="footer-separator"></div>
+                <h3 class="footer-section-title">Connect with us</h3>
+                <div class="footer-social">
+                    <div class="social-icon">
+                        <img src="http://localhost:3845/assets/2f7d296bad79fc2396cde77a21354b67aa7dc499.svg" alt="Twitter">
+                    </div>
+                    <div class="social-icon">
+                        <img src="http://localhost:3845/assets/bf9a6098c809ee9d22ce79bf1a3a6fc3f70f4fed.svg" alt="Instagram">
+                    </div>
+                    <div class="social-icon">
+                        <img src="http://localhost:3845/assets/0672756ff92affc8eaa5f7e8ae37945f155d66ad.svg" alt="Facebook">
+                    </div>
+                    <div class="social-icon">
+                        <img src="http://localhost:3845/assets/524007206ff4ce741c1ba69761b74d2b860ddd20.svg" alt="YouTube">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-contact">
+                    <a href="tel:01612476106" class="footer-link">0161 247 6106</a>
+                    <a href="#" class="footer-link">Chat</a>
+                    <a href="#" class="footer-link">Opening hours</a>
+                    <a href="mailto:library@mmu.ac.uk" class="footer-link">library@mmu.ac.uk</a>
+                    <a href="#" class="footer-link">Tell us what you think</a>
+                </div>
+                <div class="footer-separator"></div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Status of Library systems</a>
+                    <a href="#" class="footer-link">Sitemap</a>
+                    <a href="#" class="footer-link">Library privacy notice</a>
+                    <a href="#" class="footer-link">Policies, regulations and legal notices</a>
+                    <a href="#" class="footer-link">Cookies</a>
+                    <a href="#" class="footer-link">Website terms of use</a>
+                    <a href="#" class="footer-link">Accessibility</a>
+                </div>
+                <p class="footer-copyright">© 2025 Manchester Metropolitan University, all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
