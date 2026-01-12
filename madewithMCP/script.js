@@ -18,6 +18,44 @@ function handleSearch() {
   }
 }
 
+// Tab switching for Lists page
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('[id^="custom-lists"], [id^="reading-lists"]');
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const tabName = btn.getAttribute('data-tab');
+    
+    // Update active tab button
+    tabButtons.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    // Update visible content
+    tabContents.forEach((content) => {
+      if (content.id === tabName) {
+        content.style.display = 'flex';
+      } else {
+        content.style.display = 'none';
+      }
+    });
+  });
+});
+
+// List buttons interaction
+const listButtons = document.querySelectorAll('.list-button:not(.add-list-btn)');
+listButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const title = btn.querySelector('.list-button-title')?.textContent;
+    showNotification(`Opened: ${title}`, 'info');
+  });
+});
+
+// Add list button
+const addListBtn = document.querySelector('.add-list-btn');
+addListBtn?.addEventListener('click', () => {
+  showNotification('New list created (demo)', 'success');
+});
+
 // Add to List button functionality
 const addToListButtons = document.querySelectorAll('.book-buttons .btn:first-child');
 
@@ -116,8 +154,18 @@ const navLinks = document.querySelectorAll('.navbar-link');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
     const linkText = link.querySelector('span')?.textContent?.trim();
+    const href = link.getAttribute('href') || '';
+    const isHashLink = href === '#' || href === '';
+
+    if (!isHashLink) {
+      if (linkText === 'Lists') {
+        return; // allow navigation to lists page
+      }
+      return; // allow default navigation for other real links
+    }
+
+    e.preventDefault();
 
     navLinks.forEach((l) => l.classList.remove('active'));
     link.classList.add('active');
@@ -235,6 +283,58 @@ socialIcons.forEach((icon) => {
     showNotification('Opening social media page...', 'info');
   });
 });
+
+// Lists page interactions
+const listsPage = document.querySelector('.lists-page');
+
+if (listsPage) {
+  const listFilterButtons = document.querySelectorAll('.list-filter button');
+  listFilterButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      listFilterButtons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const label = btn.textContent?.trim() || 'Filter';
+      showNotification(`${label} filter applied`, 'info');
+    });
+  });
+
+  const listsSearchInput = document.querySelector('.lists-search input');
+  const listsSearchButton = document.querySelector('.lists-search button');
+  const triggerListSearch = () => {
+    const term = listsSearchInput?.value.trim();
+    if (term) {
+      showNotification(`Searching lists for: ${term}`, 'info');
+    }
+  };
+  listsSearchButton?.addEventListener('click', triggerListSearch);
+  listsSearchInput?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') triggerListSearch();
+  });
+
+  const listCardViewButtons = document.querySelectorAll('.list-card .view-list');
+  listCardViewButtons.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const title = btn.closest('.list-card')?.querySelector('.list-card-title')?.textContent || 'Selected list';
+      showNotification(`Opening list: ${title}`, 'info');
+    });
+  });
+
+  const listCardShareButtons = document.querySelectorAll('.share-list');
+  listCardShareButtons.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const title = btn.closest('.list-card')?.querySelector('.list-card-title')?.textContent || 'this list';
+      showShareModal(title);
+    });
+  });
+
+  const createListButton = document.querySelector('.create-list');
+  createListButton?.addEventListener('click', (e) => {
+    e.preventDefault();
+    showNotification('New list created (demo)', 'success');
+  });
+}
 
 // Notification system
 function showNotification(message, type = 'info') {

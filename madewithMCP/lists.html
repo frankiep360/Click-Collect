@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lists - Click and Collect</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-transition lists-page-design-system lists-page">
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="navbar-content">
+			<div class="navbar-left">
+				<div class="navbar-logo-section">
+					<a class="navbar-logo-link" href="main.html" aria-label="Go to home">
+						<img class="navbar-logo" src="http://localhost:3845/assets/1ce7cf78151afb05a1e53dbcf9584dc301ae1be3.svg" alt="Logo">
+					</a>
+					<div class="navbar-title">Library Search</div>
+				</div>
+				<div class="navbar-search">
+					<input type="text" placeholder="Search for books, articles and more">
+					<img src="http://localhost:3845/assets/4445274806156fdb1ce47bc40539efd0c34952e8.svg" alt="Search">
+				</div>
+			</div>
+			<div class="navbar-right">
+				<a href="main.html" class="navbar-link">
+					<span>Current Reservation</span>
+					<img src="http://localhost:3845/assets/0fce748c91ac619d4b97b4ce3fef20e3b7b43b41.svg" alt="Books">
+				</a>
+				<a href="lists.html" class="navbar-link active">
+					<span>Lists</span>
+					<img src="http://localhost:3845/assets/9f6aec299689927c5e4eedeb0303ff4194aeebcb.svg" alt="Hamburger">
+				</a>
+				<a href="#" class="navbar-link">
+					<span>My Account</span>
+					<img src="http://localhost:3845/assets/bafca265d90a5f2cfb7dae48e32f8ea25b0be3b3.svg" alt="Dropdown" style="transform: rotate(90deg);">
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section (matches landing style) -->
+	<div class="hero-section">
+		<img class="hero-bg" src="http://localhost:3845/assets/40802ebc1f20e052ff6109b083b197ba53682b7f.png" alt="Library Background">
+		<div class="hero-overlay">
+			<div class="hero-content">
+				<h1 class="hero-title">Click and Collect</h1>
+				<p class="hero-subtitle">Welcome to the Manchester Metropolitan University Click and Collect Library service.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Banner -->
+	<div class="lists-banner">
+		<h2>Your Lists</h2>
+	</div>
+
+	<div class="lists-container">
+		<div class="lists-tabs">
+			<button class="tab-button active" data-tab="custom-lists">Custom Lists</button>
+			<button class="tab-button" data-tab="reading-lists">Reading Lists</button>
+		</div>
+
+		<!-- Custom Lists Tab -->
+		<div class="lists-layout" id="custom-lists" style="display: flex;">
+			<aside class="lists-sidebar">
+				<div class="list-items">
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">List1 - Need to read</div>
+							<div class="list-button-subtitle">by author</div>
+						</div>
+						<span class="list-button-action">...</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">List1 - Need to read</div>
+							<div class="list-button-subtitle">by author</div>
+						</div>
+						<span class="list-button-action">...</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">List1 - Need to read</div>
+							<div class="list-button-subtitle">by author</div>
+						</div>
+						<span class="list-button-action">...</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">List1 - Need to read</div>
+							<div class="list-button-subtitle">by author</div>
+						</div>
+						<span class="list-button-action">...</span>
+					</button>
+					<button class="list-button add-list-btn">
+						<img src="plus.svg" alt="Add">
+					</button>
+				</div>
+			</aside>
+
+			<div class="lists-content">
+				<div class="book-card-container">
+					<article class="book-card-large book-card">
+						<div class="book-card-top">
+							<img class="book-cover-large" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book cover">
+							<div class="book-info">
+								<div class="book-title-section">
+									<h3 class="book-title">The Design of Everyday Things</h3>
+									<p class="book-author">By Donald A. Norman</p>
+								</div>
+								<p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget.</p>
+							</div>
+						</div>
+						<div class="book-card-bottom">
+							<div class="book-meta">
+								<div class="availability">
+									<img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+									<span class="availability-text">Available</span>
+								</div>
+								<span class="book-edition">2017 - First Edition</span>
+							</div>
+							<div class="book-buttons">
+								<button class="btn">
+									<span>Add to List</span>
+									<img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+								</button>
+								<button class="btn">
+									<span>Share</span>
+									<img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+								</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="book-card-large book-card">
+						<div class="book-card-top">
+							<img class="book-cover-large" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book cover">
+							<div class="book-info">
+								<div class="book-title-section">
+									<h3 class="book-title">The Design of Everyday Things</h3>
+									<p class="book-author">By Donald A. Norman</p>
+								</div>
+								<p class="book-description">Lorem ipsum dolor sit amet consectetur. Viverra eget porttitor quisque convallis velit. Consectetur et metus semper commodo at eleifend id leo. Enim purus lectus ut sit porttitor est. Consectetur dolor neque lacinia ut in feugiat feugiat eget.</p>
+							</div>
+						</div>
+						<div class="book-card-bottom">
+							<div class="book-meta">
+								<div class="availability">
+									<img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+									<span class="availability-text">Available</span>
+								</div>
+								<span class="book-edition">2017 - First Edition</span>
+							</div>
+							<div class="book-buttons">
+								<button class="btn">
+									<span>Add to List</span>
+									<img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+								</button>
+								<button class="btn">
+									<span>Share</span>
+									<img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<!-- Reading Lists Tab -->
+		<div class="lists-layout" id="reading-lists" style="display: none;">
+			<aside class="lists-sidebar">
+				<div class="list-items">
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">Design for Others</div>
+							<div class="list-button-subtitle">6 items - Shared with tutor</div>
+						</div>
+						<span class="list-button-action">›</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">User Experience Design</div>
+							<div class="list-button-subtitle">4 items - Semester B</div>
+						</div>
+						<span class="list-button-action">›</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">Research Methods</div>
+							<div class="list-button-subtitle">2 items - Lecturer notes</div>
+						</div>
+						<span class="list-button-action">›</span>
+					</button>
+					<button class="list-button">
+						<div class="list-button-content">
+							<div class="list-button-title">Archived: Studio</div>
+							<div class="list-button-subtitle">5 items - Last year</div>
+						</div>
+						<span class="list-button-action">›</span>
+					</button>
+				</div>
+			</aside>
+
+			<div class="lists-content">
+				<div class="book-card-container">
+					<article class="book-card-large book-card">
+						<div class="book-card-top">
+							<img class="book-cover-large" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book cover">
+							<div class="book-info">
+								<div class="book-title-section">
+									<h3 class="book-title">The Design of Everyday Things</h3>
+									<p class="book-author">By Donald A. Norman</p>
+								</div>
+								<p class="book-description">Core text for usability heuristics and human-centered design. Required for the "Design for Others" reading list.</p>
+							</div>
+						</div>
+						<div class="book-card-bottom">
+							<div class="book-meta">
+								<div class="availability">
+									<img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+									<span class="availability-text">Available</span>
+								</div>
+								<span class="book-edition">2017 - First Edition</span>
+							</div>
+							<div class="book-buttons">
+								<button class="btn">
+									<span>Add to List</span>
+									<img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+								</button>
+								<button class="btn">
+									<span>Share</span>
+									<img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+								</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="book-card-large book-card">
+						<div class="book-card-top">
+							<img class="book-cover-large" src="http://localhost:3845/assets/bdbbbd565dd0da0ef8c96b419a607386ddec243b.png" alt="Book cover">
+							<div class="book-info">
+								<div class="book-title-section">
+									<h3 class="book-title">Don't Make Me Think</h3>
+									<p class="book-author">By Steve Krug</p>
+								</div>
+								<p class="book-description">Concise guide to intuitive navigation and interface clarity. Assigned for the User Experience Design module.</p>
+							</div>
+						</div>
+						<div class="book-card-bottom">
+							<div class="book-meta">
+								<div class="availability">
+									<img class="availability-icon" src="http://localhost:3845/assets/ddd5889cf2e2f6385d38076ca02fbdb93ee49273.svg" alt="Available">
+									<span class="availability-text">Available</span>
+								</div>
+								<span class="book-edition">2020 - Updated Print</span>
+							</div>
+							<div class="book-buttons">
+								<button class="btn">
+									<span>Add to List</span>
+									<img src="http://localhost:3845/assets/94199dd805642fd4e95c59f7cc7f5c78dfad3210.svg" alt="Add">
+								</button>
+								<button class="btn">
+									<span>Share</span>
+									<img src="http://localhost:3845/assets/1b2463c91b7cfc2d947842c0f5aaaea11640d443.svg" alt="Share">
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
